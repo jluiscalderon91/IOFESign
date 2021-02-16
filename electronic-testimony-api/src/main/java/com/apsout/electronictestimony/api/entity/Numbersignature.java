@@ -1,0 +1,152 @@
+package com.apsout.electronictestimony.api.entity;
+
+import javax.persistence.*;
+import java.sql.Timestamp;
+import java.util.Objects;
+
+@Entity
+@Table(name = "numbersignature")
+public class Numbersignature {
+    private Integer id;
+    private Integer documentId;
+    private Integer resourceId;
+    private String hashResource;
+    private Integer quantity;
+    private Timestamp createAt;
+    private Byte active;
+    private Byte deleted;
+    private String observation;
+    private Document documentByDocumentId;
+    private Resource resourceByResourceId;
+
+    @Id
+    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Basic
+    @Column(name = "documentId", nullable = false)
+    public Integer getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(Integer documentId) {
+        this.documentId = documentId;
+    }
+
+    @Basic
+    @Column(name = "resourceId", nullable = false)
+    public Integer getResourceId() {
+        return resourceId;
+    }
+
+    public void setResourceId(Integer resourceId) {
+        this.resourceId = resourceId;
+    }
+
+    @Basic
+    @Column(name = "hashResource", nullable = true, length = 64)
+    public String getHashResource() {
+        return hashResource;
+    }
+
+    public void setHashResource(String hashResource) {
+        this.hashResource = hashResource;
+    }
+
+    @Basic
+    @Column(name = "quantity", nullable = true)
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    @Basic
+    @Column(name = "createAt", nullable = true)
+    public Timestamp getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(Timestamp createAt) {
+        this.createAt = createAt;
+    }
+
+    @Basic
+    @Column(name = "active", nullable = true)
+    public Byte getActive() {
+        return active;
+    }
+
+    public void setActive(Byte active) {
+        this.active = active;
+    }
+
+    @Basic
+    @Column(name = "deleted", nullable = true)
+    public Byte getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Byte deleted) {
+        this.deleted = deleted;
+    }
+
+    @Basic
+    @Column(name = "observation", nullable = true, length = 64)
+    public String getObservation() {
+        return observation;
+    }
+
+    public void setObservation(String observation) {
+        this.observation = observation;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Numbersignature that = (Numbersignature) o;
+        return Objects.equals(id, that.id) &&
+                Objects.equals(documentId, that.documentId) &&
+                Objects.equals(resourceId, that.resourceId) &&
+                Objects.equals(quantity, that.quantity) &&
+                Objects.equals(createAt, that.createAt) &&
+                Objects.equals(active, that.active) &&
+                Objects.equals(deleted, that.deleted) &&
+                Objects.equals(observation, that.observation);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, documentId, resourceId, quantity, createAt, active, deleted, observation);
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "documentId", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
+    public Document getDocumentByDocumentId() {
+        return documentByDocumentId;
+    }
+
+    public void setDocumentByDocumentId(Document documentByDocumentId) {
+        this.documentByDocumentId = documentByDocumentId;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "resourceId", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
+    public Resource getResourceByResourceId() {
+        return resourceByResourceId;
+    }
+
+    public void setResourceByResourceId(Resource resourceByResourceId) {
+        this.resourceByResourceId = resourceByResourceId;
+    }
+}

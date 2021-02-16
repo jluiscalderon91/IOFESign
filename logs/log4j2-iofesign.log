@@ -1,0 +1,46 @@
+2021-02-15 19:51:31.203  INFO DESKTOP-470SU2F --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.0.21.Final
+2021-02-15 19:51:31.251  INFO DESKTOP-470SU2F --- [           main] .a.e.a.ElectronicTestimonyApiApplication : Starting ElectronicTestimonyApiApplication on DESKTOP-470SU2F with PID 23464 (D:\IOFE-Proyects\Back-End\electronic-testimony-api\target\classes started by Usuario in D:\IOFE-Proyects\Back-End)
+2021-02-15 19:51:31.256  INFO DESKTOP-470SU2F --- [           main] .a.e.a.ElectronicTestimonyApiApplication : No active profile set, falling back to default profiles: default
+2021-02-15 19:51:32.191  INFO DESKTOP-470SU2F --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-15 19:51:32.469  INFO DESKTOP-470SU2F --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 269ms. Found 80 JPA repository interfaces.
+2021-02-15 19:51:33.152  INFO DESKTOP-470SU2F --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4e08acf9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-15 19:51:33.158  INFO DESKTOP-470SU2F --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-15 19:51:33.382  INFO DESKTOP-470SU2F --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2021-02-15 19:51:33.391  INFO DESKTOP-470SU2F --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-15 19:51:33.391  INFO DESKTOP-470SU2F --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-02-15 19:51:33.392  INFO DESKTOP-470SU2F --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-15 19:51:33.561  INFO DESKTOP-470SU2F --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-02-15 19:51:33.562  INFO DESKTOP-470SU2F --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1956 ms
+2021-02-15 19:51:33.789  INFO DESKTOP-470SU2F --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-15 19:51:33.838  INFO DESKTOP-470SU2F --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-02-15 19:51:33.980  INFO DESKTOP-470SU2F --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-15 19:51:34.075  INFO DESKTOP-470SU2F --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-02-15 19:51:34.236  INFO DESKTOP-470SU2F --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-02-15 19:51:34.247  INFO DESKTOP-470SU2F --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-02-15 19:51:35.934  INFO DESKTOP-470SU2F --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-15 19:51:35.942  INFO DESKTOP-470SU2F --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-15 19:51:38.447  WARN DESKTOP-470SU2F --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-15 19:51:38.700  INFO DESKTOP-470SU2F --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7734695d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3bea7134, org.springframework.security.web.header.HeaderWriterFilter@b926efa, org.springframework.web.filter.CorsFilter@14c8dfb9, org.springframework.security.web.authentication.logout.LogoutFilter@7308e2d6, com.apsout.electronictestimony.api.config.security.JWTAuthenticationFilter@4e67f0a0, com.apsout.electronictestimony.api.config.security.JWTAuthorizationFilter@656c356c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f60ba06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@186f7553, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3146c61d, org.springframework.security.web.session.SessionManagementFilter@65595be7, org.springframework.security.web.access.ExceptionTranslationFilter@46e2a773, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@642ebd4c]
+2021-02-15 19:51:38.819  INFO DESKTOP-470SU2F --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-15 19:51:39.064  WARN DESKTOP-470SU2F --- [           main] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2021-02-15 19:51:39.396  INFO DESKTOP-470SU2F --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-02-15 19:51:39.451  INFO DESKTOP-470SU2F --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-02-15 19:51:39.473  INFO DESKTOP-470SU2F --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-15 19:51:39.475  INFO DESKTOP-470SU2F --- [           main] .a.e.a.ElectronicTestimonyApiApplication : Started ElectronicTestimonyApiApplication in 8.551 seconds (JVM running for 10.361)
+2021-02-15 19:51:39.477  INFO DESKTOP-470SU2F --- [           main] .a.e.a.ElectronicTestimonyApiApplication : Started the IOFESign
+2021-02-15 19:51:39.477  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ApplicationServiceImpl         : Starting load static data
+2021-02-15 19:51:39.477  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.FontcolorServiceImpl           : Getting initial list of fontcolors
+2021-02-15 19:51:39.528  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.FontsizeServiceImpl            : Getting initial list of fontsizes
+2021-02-15 19:51:39.535  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.FonttypeServiceImpl            : Getting initial list of fonttypes
+2021-02-15 19:51:39.539  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.PagestampServiceImpl           : Getting initial list of pagestamps
+2021-02-15 19:51:39.544  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ContentpositionServiceImpl     : Getting initial list of conntentpositions
+2021-02-15 19:51:39.549  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.WorkflowtypeServiceImpl        : Getting initial list of workflowtypes
+2021-02-15 19:51:39.567  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ParticipanttypeServiceImpl     : Getting initial list of participanttypes
+2021-02-15 19:51:39.572  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.PersontypeServiceImpl          : Getting initial list of persontypes
+2021-02-15 19:51:39.576  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.StateServiceImpl               : Getting initial list of states
+2021-02-15 19:51:39.605  INFO DESKTOP-470SU2F --- [           main] .e.a.s.IdentificationDocumentServiceImpl : Getting initial list of identificationdocuments
+2021-02-15 19:51:39.618  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.OperationServiceImpl           : Getting initial list of operations
+2021-02-15 19:51:39.622  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ModuleServiceImpl              : Getting initial list of modules
+2021-02-15 19:51:39.630  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ServiceweightServiceImpl       : Getting initial list of serviceweights
+2021-02-15 19:51:39.659  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ServiceServiceImpl             : Getting initial list of services
+2021-02-15 19:51:39.663  INFO DESKTOP-470SU2F --- [           main] c.a.e.a.s.ApplicationServiceImpl         : Finished load static data

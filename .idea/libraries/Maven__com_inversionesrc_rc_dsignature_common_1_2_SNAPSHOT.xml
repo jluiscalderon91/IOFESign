@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.inversionesrc:rc-dsignature-common:1.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/inversionesrc/rc-dsignature-common/1.2-SNAPSHOT/rc-dsignature-common-1.2-20190302.212230-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/inversionesrc/rc-dsignature-common/1.2-SNAPSHOT/rc-dsignature-common-1.2-20190302.212230-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/inversionesrc/rc-dsignature-common/1.2-SNAPSHOT/rc-dsignature-common-1.2-20190302.212230-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
